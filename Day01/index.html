@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.css">
+    <title>Advent of Code 2021 - Day 01</title>
+    <style>
+        body {
+            background-color: #DADADA;
+        }
+
+        input {
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="input.js"></script>
+<script src="calc.js"></script>
+
+
+<script>
+    window.onload = function() {
+        initExercise();
+    }
+    function initExercise() {        
+        const list = input();
+        const result = calculate(input());
+        document.getElementById("result").value = result;
+    }
+    </script>
+
+<body>
+    <main class="ui container">
+        <div></div>
+        <h1 class="ui dividing header">Advent of Code 2021 - Day 01</h1>
+        <div class="ui segment">
+           <label for="suggestion" class="ui compact large right label">Result Day 01:</label>
+            <input class="ui input" id="result" readonly/>
+        </div>
+    </main>
+</body>
+</html>
