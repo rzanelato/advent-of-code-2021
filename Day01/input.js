@@ -1,4 +1,4 @@
-function input() {
+exports.input = () => {
     return [199
         ,203
         ,200
